@@ -1,3 +1,11 @@
 ---
 # defaults file for try
 Ubuntu_source: snap
+
+# https://maas.io/docs/how-to-install-maas#poc-configuration-snap-only
+proof_of_concept: true
+
+test_deployment: true
+
+
+https_TLS_enable: true

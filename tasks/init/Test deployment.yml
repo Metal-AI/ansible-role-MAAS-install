@@ -1,0 +1,14 @@
+---
+# Test Deployment
+# from: sudo maas init --help
+- name: Install maas-test-db Snap
+  community.general.snap:
+    name: maas-test-db
+  become: true
+
+- name: Init for a non-production deployment
+  ansible.builtin.shell: |
+    maas init region+rack --database-uri maas-test-db:///
+  args:
+    creates: somelog.txt
+  become: true

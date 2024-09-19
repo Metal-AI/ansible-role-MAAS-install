@@ -1,0 +1,4 @@
+---
+# https://maas.io/docs/how-to-install-maas#potential-ntp-conflicts
+
+sudo systemctl disable --now systemd-timesyncd

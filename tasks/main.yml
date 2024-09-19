@@ -1,5 +1,17 @@
 ---
-- name: Ubuntu source
-  include_tasks: "source/{{ Ubuntu_source }}.yml"
 
 # https://maas.io/docs/how-to-install-maas
+
+# Steps:
+- name: 1. install
+  include_tasks: install/main.yml
+
+- name: 2. init
+  include_tasks: init/main.yml
+
+- name: 3. create admin
+  include_tasks: create admin/main.yml
+
+- name: 4. enable TLS
+  include_tasks: enable TLS/main.yml
+  when: https_TLS_enable

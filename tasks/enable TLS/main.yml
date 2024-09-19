@@ -1,0 +1,4 @@
+---
+
+#To enable TLS for secured communication, please run
+  # sudo maas config-tls enable

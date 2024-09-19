@@ -2,7 +2,7 @@
 # ai query: Can you make me an Ansible playbook to install IntelliJ Idea Community Edition on Ubuntu Linux?
 
 
-- name: Install MAAS from Snap
+- name: Install MAAS Snap
   community.general.snap:
     name: maas
     channel: "{{ snap_version }}"
