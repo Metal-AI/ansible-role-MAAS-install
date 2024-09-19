@@ -1,3 +1,6 @@
 ---
 # Snap Versions: https://snapcraft.io/maas
 snap_version: 3.5
+
+
+fix_log_dir: /var/log/fix-maas

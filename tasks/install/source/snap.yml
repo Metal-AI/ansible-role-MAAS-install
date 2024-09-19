@@ -1,9 +1,11 @@
 ---
-# ai query: Can you make me an Ansible playbook to install IntelliJ Idea Community Edition on Ubuntu Linux?
 
+- name: Fix Fetch and check assertions for snap "core22" (persistent network error
+  include_tasks: .Fix/persistent network error.yml
 
 - name: Install MAAS Snap
   community.general.snap:
     name: maas
     channel: "{{ snap_version }}"
   become: true
+  when: false
