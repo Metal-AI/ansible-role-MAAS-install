@@ -1,2 +1,3 @@
 ---
-# vars file for try
+# Snap Versions: https://snapcraft.io/maas
+snap_version: 3.5

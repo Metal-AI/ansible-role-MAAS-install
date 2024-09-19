@@ -1,2 +1,5 @@
 ---
-# tasks file for try
+- name: Ubuntu source
+  include_tasks: "source/{{ Ubuntu_source }}.yml"
+
+# https://maas.io/docs/how-to-install-maas
