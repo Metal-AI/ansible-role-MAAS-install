@@ -1,4 +1,0 @@
----
-- name: Ubuntu source
-  include_tasks: Test deployment.yml
-  when: test_deployment
