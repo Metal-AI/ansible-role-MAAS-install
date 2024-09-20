@@ -1,11 +1,8 @@
 ---
 
-- name: Fix Fetch and check assertions for snap "core22" (persistent network error
-  include_tasks: .Fix/persistent network error.yml
-
+# NOT Idempotent: It's showing 'changed' on re-run, even if already installed!
 - name: Install MAAS Snap
   community.general.snap:
     name: maas
     channel: "{{ snap_version }}"
   become: true
-  when: false
